@@ -1,0 +1,91 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  10.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141512:19)
+      at Object.onceWrapper (events.js:286:20)
+      at ClientRequest.emit (events.js:198:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:673:40)
+      at Object.onceWrapper (events.js:286:20)
+      at TLSSocket.emit (events.js:198:13)
+      at TLSSocket.Socket._onTimeout (net.js:443:8)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+
+npm manifest: 
+  {
+    "name": "client_analitic_app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@reduxjs/toolkit": "^1.5.0",
+      "@types/jest": "24.0.15",
+      "@types/lodash": "^4.14.149",
+      "@types/node": "12.6.2",
+      "@types/react": "16.8.23",
+      "@types/react-dom": "16.8.4",
+      "@types/react-leaflet": "^2.5.0",
+      "@types/react-redux": "^7.1.16",
+      "@types/react-router-dom": "^5.1.3",
+      "highcharts": "^7.2.1",
+      "highcharts-react-official": "^2.2.2",
+      "leaflet": "^1.6.0",
+      "lodash": "^4.17.15",
+      "react": "^16.12.0",
+      "react-dom": "^16.12.0",
+      "react-leaflet": "^2.6.1",
+      "react-redux": "^7.2.2",
+      "react-router-dom": "^5.1.2",
+      "react-scripts": "3.0.1",
+      "react-spinners": "^0.10.6",
+      "s": "^1.0.0",
+      "semantic-ui-react": "^0.87.3",
+      "typescript": "^3.7.3"
+    },
+    "scripts": {
+      "dev": "react-scripts start",
+      "start:build": "react-scripts build",
+      "start:run": "serve -s build -p 3001",
+      "start": "npm run start:build && npm run start:run",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "axios": "^0.19.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
